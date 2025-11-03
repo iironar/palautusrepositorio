@@ -43,12 +43,12 @@ class TestStatisticsService(unittest.TestCase):
         top_viisi = self.stats.top(4, SortBy.POINTS)
         self.assertEqual([pelaaja.name for pelaaja in top_viisi], ["Gretzky", "Lemieux", "Yzerman", "Kurri", "Semenko"])
 
-    def test_top_järjestetään_tarkoituksenmukaisesti_goals(self):
+    def test_top_goals_toimii_oikein(self):
        
         top_viisi = self.stats.top(4,SortBy.GOALS)
         self.assertEqual([pelaaja.name for pelaaja in top_viisi], ["Lemieux", "Yzerman", "Kurri", "Gretzky", "Semenko"])
 
-    def test_top_järjestetään_tarkoituksenmukaisesti_assists(self):
+    def test_top_assists_toimii_oikein(self):
         
         top_viisi = self.stats.top(4, SortBy.ASSISTS)
         self.assertEqual([pelaaja.name for pelaaja in top_viisi], ["Gretzky", "Yzerman", "Lemieux", "Kurri", "Semenko"])
