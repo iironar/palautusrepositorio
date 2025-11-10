@@ -1,4 +1,4 @@
-# tehdään alussa importit
+# tehdään alussa importit jdaksdaspjdasd
 
 from logger import logger
 from summa import summa
